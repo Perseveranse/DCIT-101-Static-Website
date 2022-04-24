@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="mobile-menu.js"></script>
+    <script src="modal.js"></script>
+    <script src="local-storage.js"></script>
+    <script src="form-validation.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <title> Pers Tech Solutions </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTZXVMG1QH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JTZXVMG1QH');
+    </script>
+  </head>
+  <body>
+
+    <nav class="menu-top" id="main-nav-bar">
+      <div class="shape-triangle" id="shape-1"></div>
+      <div class="shape-square" id="shape-2"></div>
+      <div onclick="menuToggle()" class="burger-container" id="burger-container">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"><span class="red-line"></span></div>
+        <div class="menu-bar"></div>
+      </div>
+
+        <div onclick="menuToggle()" id="cross" class="cross invisible">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <ul class="main-menu" id="menu-js">
+          <li><a onclick="menuToggle()" href="#main-page">Home</a></li>
+          <li><a onclick="menuToggle()" href="#portfolio">Help</a></li>
+          <li><a onclick="menuToggle()" href="#about-id">About Us</a></li>
+          <li><a onclick="menuToggle()" href="#contact-id">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="container container-top" id="main-page">
+      <h5 class="title top-title">PERS TECH SOLUTIONS</h5>
+      <p class="presentation top-presentation">Hello! My name is Cornelius Eshun. I am a student of University of Ghana! I can help you build a product, feature or website. Take a look at my works. If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+      <button class="button-main top-button" type="submit"><span class="button-text">Start Collaboration</span></button>
+    </section>
+
+    <section class="shapes"></section>
+
+
+    <div id="portfolio">
+
+      <div class="desktop-grid">
+
+        <div class="ds-grid-first">
+        <h2 class="desktop-title">Projects</h2>
+        <div class="pois"></div>
+        <div class="pr-hidden">
+        <section class="project-content">
+          <h2 class="project-title"> To do list </h2>
+          <p class="project-description">Small description of the project</p>
+          <ul class="project-list">
+            <li class="langbox">HTML/CSS</li>
+            <li class="langbox">JavaScript</li>
+            <li class="langbox">Webpack</li>
+            <li class="langbox">Jest</li>
+          </ul>
+          <button class="button-project" type="submit" onclick="modal(0)"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+        </section></div>
+        </div>
+
+        <div class="ds-grid-second">
+          <div class="ds-grid-second-first-container">
+
+          <div class="hidden-2">
+          <section class="project-content content-small">
+            <h2 class="project-title title-small"> Awesome Books </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <!-- <li class="langbox">Ruby On Rails</li> -->
+            </ul>
+            <button onclick="modal(1)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section></div>
+
+          <div class="pois second-pois">
+          </div><div class="shape-2"></div>
+
+          <div class="hidden-4">
+            <section class="project-content">
+              <h2 class="project-title"> Project name goes here </h2>
+              <p class="project-description">Small description of the project</p>
+              <ul class="project-list">
+                <li class="langbox">HTML/CSS</li>
+                <li class="langbox">JavaScript</li>
+                <li class="langbox">Ruby On Rails</li>
+              </ul>
+              <button onclick="modal(2)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            </section></div>
+
+            <div class="square-red-2"></div>
+
+        </div>
+        <div class="ds-grid-second-second-container">
+
+        <div class="hidden-3">
+          <section class="project-content content-small">
+            <h2 class="project-title title-small"> HTML/CSS Capstone Project </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+            </ul>
+            <button onclick="modal(4)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section></div>
+
+          <div class="hidden-5">
+            <section class="project-content content-small">
+              <h2 class="project-title title-small">Project name goes here</h2>
+              <p class="project-description">Small description of the project</p>
+              <ul class="project-list">
+                <li class="langbox">HTML/CSS</li>
+                <li class="langbox">JavaScript</li>
+                <li class="langbox">Ruby On Rails</li>
+              </ul>
+              <button onclick="modal(3)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            </section></div>
+
+            <div class="square-3"></div>
+
+
+      </div></div></div>
+
+
+      <div class="grid-container proj-grid">
+      <div class="title-project">Projects</div>
+      <ul class="grid-projects grid-one">
+
+
+        <li class="project first-pr">
+          <img src="img/laptop.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> To do list </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Webpack</li>
+            </ul>
+            <button onclick="modal(0)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
+
+        <li class="project second-pr">
+          <img src="img/laptop2.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Awesome Books </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button onclick="modal(1)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
+
+        <li class="project third-pr">
+          <img src="img/laptop3.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button onclick="modal(2)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
+
+        <li class="project fourth-pr">
+          <img src="img/laptop4.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button onclick="modal(3)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
+
+        <li class="project fifth-pr">
+          <img src="img/laptop5.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> HTML/CSS Capstone Project </h2>
+            <p class="project-description">Small description of the project</p>
+
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+            </ul>
+            <button onclick="modal(4)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
+
+      </ul>
+      </div>
+    </div>
+
+    <div id="about-id" class="container-about-section">
+    <div class="container container-middle">
+      <section class="about-section">
+        <h1 class="title">About</h1>
+        <p class="presentation top-presentation">I am a student of University of Ghana offering Bsc. Information Technology. I can create and design website like this one. This very one has been given to us as an assignment. If you need Someone to create a website or design one for you, just contact me. </p>
+        <button class="button-main" type="submit"><span class="button-text">Get my CV<i class="fas fa-download"></i></span></button>
+      </section>
+    </div>
+
+    <div class="grid-container languages-grid">
+    <section class="grid-projects lang-squares">
+      <div class="bottom-square blue-lang-square">
+        <h3 class="square-text">Languages</h3>
+        <ul class="square-list">
+          <li>JavaScript (ES5/ES6)</li>
+          <li>Ruby</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+
+      <div class="bottom-square red-lang-square">
+        <h3 class="square-text">Frameworks</h3>
+        <ul class="square-list">
+          <li>Bootstrap</li>
+          <li>Ruby On Rails</li>
+          <li>RSpec</li>
+          <li>Capibara</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
+
+      <div class="bottom-square yellow-lang-square">
+        <h3 class="square-text">Skills</h3>
+        <ul class="square-list">
+          <li>Codekit</li>
+          <li>Codepen</li>
+          <li>GitHub</li>
+          <li>GitLab</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
+      </section>
+    </div>
+    </div>
+
+    <div class="shape-triangle"></div>
+    <div class="shape-square"></div>
+    <section id="contact-id" class="container container-bottom">
+      <h1 class="title footer-title">Get Started</h1>
+      <p class="presentation .Click on one of the links to send me a message and I will reply as soon as possible.</p>
+      <form action="https://formspree.io/f/xqkwdpqy" id="contact-form" method="POST">
+        <input onkeypress="keypress()" name="name" maxlength="30" type="text" class="input-form name-form" required placeholder="Your name">
+        <input onkeypress="keypress()" name="email" type="email" class="input-form email-form" required placeholder="Your email">
+        <textarea onkeypress="keypress()" name="message" maxlength="500" class="text-form text-form2" required placeholder="Enter your message here.."></textarea>
+        <button onclick="checkemail()" id="contact-submit-button" class="button-main" type="submit"><span class="button-text">Start Collaboration</span></button>
+      </form>
+    </section>
+
+    <footer>
+      <a href="#" class="button-text text-footer-button">Get my CV<i class="fas fa-download"></i></a>
+      <ul>
+        <li class="fab fa-stack-overflow"></li>
+        <li class="fab fa-github"></li>
+        <li class="fab fa-twitter"></li>
+        <li class="fab fa-linkedin"></li>
+        <li class="fab fa-facebook"></li>
+        <li class="fab fa-twitch"></li>
+      </ul>
+    </footer>
+
+<!----------------------------------------------------------------->
+
+<article id="card" class="card invisible">
+  <div class="card-top">
+    <h3 id="card-title">See Project header</h3>
+    <i id="card-cross" class="fas fa-times-circle" onclick="toggle()"></i>
+  </div>
+  <ul id="card-list" class="card-list">
+  </ul>
+  <img src="./img/laptop1-big.png" class="card-image" alt="Someone's MacBook">
+  <p id="card-description">
+    Click on one of the links to send me a message and I will reply as soon as possible.!
+  </p>
+  <div class="button-container">
+    <button type="button" id="card-button-live" class="card-button">
+      See live
+      <i class="fas fa-external-link-alt"></i>
+    </button>
+    <button type="button" id="card-button-source" class="card-button">
+      See source
+      <i class="fab fa-github"></i>
+  </button>
+  </div>
+
+</article>
+
+<!----------------------------------------------------------------->
+
+  </body>
+</html>
